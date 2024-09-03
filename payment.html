@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet"href="Paystyle.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >  
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <form action="newpopup.html">
+            <!--Account Information Start-->
+        <h4>Account</h4>
+        <div class="input_group"></div>
+        <div class="input_box">
+            <input type="text" placeholder="FULL Name" class="name" required>
+            <i class='bx bxs-user-rectangle' ></i>
+            
+
+        </div>
+    
+    
+        <div class="input_box">
+            <input type="text" placeholder="Name On Card" class="name" required>
+            <i class='bx bxs-user' ></i>
+        </div>
+        
+        <div class="input_group"></div>
+        <div class="input_box">
+            <input type="email" placeholder="Email Address" class="name"required>
+            <i class='bx bxs-envelope'></i>
+            
+        </div>
+    
+    <div class="input_group"></div>
+        <div class="input_box">
+            <input type="text" placeholder=" Address" class="name" required>
+            <i class='bx bxs-location-plus' ></i>
+              </div>
+
+    <div class="input_group"></div>
+        <div class="input_box">
+            <input type="text" placeholder=" City" class="name" required>
+            <i class='bx bxs-city'></i>
+              </div>
+    
+    <div class="input_group"></div>
+        <div class="input_box">
+            <h4>Date Of Birth</h4>
+            <input type="text" placeholder=" DD"  class="dob"required>
+            <input type="text" placeholder=" MM"  class="dob" required>
+            <input type="text" placeholder=" YYYY"  class="dob" required>
+            
+              </div>
+              
+              <div class="input_box">
+                <h4>Gender</h4>
+                <div class="gender">
+                  <input type="radio" name="gender" id="b1" checked>
+                  <label for="b1">Male</label>
+                  <input type="radio" name="gender" id="b2">
+                  <label for="b2">Female</label>
+                  </div>
+           </div>
+        
+    
+    <div class="input_group">
+        <div class="input_box">
+            <h4>Payment Details</h4>
+            <input type="radio" name="pay"class="radio" id="bc1" checked>
+            <label for="bc1"><span>
+       <i></i>Credit Card
+            </span></label>
+                    <input type="radio" name="pay"class="radio" id="bc2">
+                    <label for="bc2"><span>
+                        <i></i>Paypal
+                    </span></label>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="tel"class="name"placeholder="Card Number 1111-2222-3333-4444" required>
+            <i class='bx bx-credit-card'></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="tel"class="name"placeholder="Card CVC 632" required>
+            <i class='bx bxs-user' ></i>
+
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="number"class="name"placeholder="Exp Month"required >
+            <i class='bx bx-calendar'></i>
+        </div>
+    </div>
+    <div class="input_group">
+        
+        <div class="input_box">
+            <input type="number"class="name"placeholder="Exp Year"required>
+            <i class='bx bx-calendar-alt'></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="number"class="name"placeholder="Enter Amount" required >
+            <i class='bx bx-money'></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+        
+        <button onClick="onclk()">Pay Now</button>
+        <script>
+            function onclk(){
+            window.location.href ="newpopup.html";
+            }
+        </script>
+        </div>
+    </div> 
+        </form>
+    </div>
+</body>
+</html>
+

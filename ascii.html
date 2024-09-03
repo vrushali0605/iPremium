@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function disp()
+{
+  var a=document.form[0][0].value;
+  b=a.length;
+  for(i=0;i<b;i++)
+     {
+       alert(a.charCodeAt(i));
+     }
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text">
+<input type="button"value="submit"onClick="disp()">
+</form>
+</body>
+</html>

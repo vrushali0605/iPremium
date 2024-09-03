@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Products</title>
+    <link rel="stylesheet" href="AdminCart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin page</title>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">Admin Dashboard</p>
+        <div class="profile">
+            <i class='bx bxs-user'></i><p>Admin</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="head">
+                <p>Admin Menu</p>
+            </div>
+            <ul>
+                <li><a href="#"><i class='bx bxs-box'></i> Manage Products</a></li>
+                <li><a href="order.html"><i class='bx bxs-receipt'></i> Manage Orders</a></li>
+                <li><a href="customer.html"><i class='bx bxs-user-detail'></i> Manage Customers</a></li>
+            </ul>
+            <div class="foot">
+                <h3>Quick Actions</h3>
+                <button>Logout</button>
+            </div>
+        </div>
+
+        <div id="root">
+            <h1 id="dashboard">Admin Dashboard</h1>
+            <div id="products" class="admin-section">
+                <h2>Manage Products</h2>
+                <div id="admin-product-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="AdminCart.js"></script>
+</body>
+</html>

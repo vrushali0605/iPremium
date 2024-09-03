@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<head>
+<title>login form</title>
+<link rel ="stylesheet" href="LoginStyle.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="wrapper">
+<form id="LoginForm" action="MobileR.html">
+<h1>Login</h1>
+<div class="input-box">
+<lable for="username">
+<input type="text" placeholder="username">
+</lable>
+<br>
+<i class='bx bxs-user'></i>
+</div>
+<div class = "input-box">
+<lable for="password">
+<input type="password" placeholder="password"><br>
+</lable>
+<i class='bx bxs-lock-open-alt' ></i>
+</div>
+
+<button type="submit" class="btn"> Login </button>
+    <script>
+        function validateForm() {
+            // Get form values
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Check if both fields are filled
+            if (username === '' || password === '') {
+                alert('All fields are required!');
+                return false; // Prevent form submission
+            }
+
+            // Redirect to another page (e.g., home.html) using JavaScript
+            window.location.href = 'MobileR.html';
+            return false; 
+        }
+        
+        </script>
+
+<div class="register-link">
+<p>Don't have an account ? <a href="registration.html">Register</a></p>
+</form>
+</div>
+

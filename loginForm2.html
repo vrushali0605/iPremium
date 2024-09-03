@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="LoginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="username">
+                    <input type="text" id="username" placeholder="Username" required>
+                </label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <label for="password">
+                    <input type="password" id="password" placeholder="Password" required>
+                </label>
+                <i class='bx bxs-lock-open-alt'></i>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="registration.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('LoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Check if both fields are filled
+            if (username === '' || password === '') {
+                alert('All fields are required!');
+                return; // Stop the function if validation fails
+            }
+
+            // Store credentials in localStorage (for learning purposes)
+            localStorage.setItem('storedUsername', username);
+            localStorage.setItem('storedPassword', password);
+
+            // Redirect to another page
+            window.location.href = 'MobileR.html';
+        });
+
+        // Optional: Auto-fill stored credentials for demonstration purposes
+       
+    </script>
+</body>
+</html>

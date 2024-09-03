@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Customer Logins</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Manage Customer Logins</h1>
+        
+        <div class="filter-section">
+            <label for="login-status-filter">Filter by Login Status:</label>
+            <select id="login-status-filter" onchange="filterLogins()">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="banned">Banned</option>
+            </select>
+        </div>
+        
+        <table class="logins-table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Login Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="logins-tbody">
+                <!-- Example Customer Rows -->
+                <tr class="login-row" data-status="active">
+                    <td>#C12345</td>
+                    <td>Vrushali</td>
+                    <td>vrushali2005@gmail.com</td>
+                    <td>Active</td>
+                    <td><button onclick="updateLoginStatus(this)">Update Status</button></td>
+                </tr>
+                <tr class="login-row" data-status="inactive">
+                    <td>#C12346</td>
+                    <td>Priya</td>
+                    <td>priya2004@gmail.com</td>
+                    <td>Inactive</td>
+                    <td><button onclick="updateLoginStatus(this)">Update Status</button></td>
+                </tr>
+                <!-- Add more customers as needed -->
+            </tbody>
+        </table>
+    </div>
+    <script src="customer.js"></script>
+</body>
+</html>
